@@ -1,8 +1,10 @@
 .profile {
+    display: block;
     width: 300px;
     margin: 0;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 30px;
 
     border: 2px solid darkgrey;
     box-shadow: 1px 1px 1px darkgray;
@@ -10,9 +12,8 @@
 }
 
 .description {
-    
-    padding-top: 40px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .image {
@@ -34,7 +35,7 @@
 .tag,
 .location {
     text-align: center;
-    color: darkgray;
+    color: gray;
     font-size: 16px;
     margin: 0;
 }
@@ -52,12 +53,31 @@
     margin-right: auto;
     padding-left: 0;
     margin-bottom: 0;
+    background-color: lightgrey;
 }
 
-.label {
+.stats>li:not(:last-child) {
+    border-right: 1px solid darkgray;
+  }
+  
+  .stats>li {
+      width: 79px;
+      padding: 10px;
+  }
+  
+  .label {
     display: block;
     text-align: center;
     margin-bottom: 8px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  
+  .value {
+    display: block;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+  }
+
+  
